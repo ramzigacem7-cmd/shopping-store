@@ -1,0 +1,246 @@
+.form_body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(63, 63, 243);
+}
+
+.login_form {
+  background-color: blue;
+  border-radius: 18px;
+  box-shadow: 1px 1px 1px 2px black;
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_form input {
+  box-shadow: 1px 1px 1px 2px black;
+  border: none;
+  background-color: rgb(152, 222, 250);
+  width: 30vw;
+  height: 3vh;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+.login_form button {
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(63, 63, 243);
+  color: white;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px 2px black;
+  border: none;
+  border-radius: 18px;
+  padding: 10px;
+}
+.login_form button a {
+  text-decoration: none;
+  color: white;
+}
+
+label {
+  font-weight: bold;
+}
+
+.main_body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+  grid-template-rows: 20vh auto auto;
+}
+
+header {
+  background: url(images/uhovrm1m.png);
+  text-align: center;
+  color: blue;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.logo_image {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 2px blue;
+}
+
+header h1 {
+  width: 100vw;
+  font-style: italic;
+}
+
+nav {
+  border: 2px solid black;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+}
+nav div {
+  height: 6vh;
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+}
+nav div button {
+  width: 20vw;
+  height: 6vh;
+}
+nav button:hover {
+  background-color: rgb(195, 194, 194);
+}
+
+main {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  display: flex;
+  flex-direction: column;
+}
+.catigories_main {
+  gap: 25px;
+  align-items: center;
+  background-color: rgb(0, 191, 255);
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.catigory_card {
+  width: 50vw;
+  height: 40vh auto;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 18px;
+  box-shadow: 1px 1px 1px 2px black;
+  padding-bottom: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+.catigory_card:hover {
+  transform: scale(1.08);
+}
+.catigory_card img {
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  text-align: center;
+  color: black;
+  background-color: blue;
+  height: 30px auto;
+}
+
+.products_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.products {
+  width: 100vw;
+  border-right: 2px solid black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-bottom: 20px;
+  overflow: scroll;
+  background-color: darkblue;
+}
+.product_card {
+  box-shadow: 1px 1px 1px 2px black;
+  border-radius: 18px;
+  width: 45vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blue;
+  transition: 0.5s;
+}
+.product_card:hover {
+  transform: scale(1.08);
+}
+.product_card img {
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+.product_card div {
+  height: 100%;
+
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.product_card div div {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.product_card div div input {
+  width: 2vw;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  height: 3vh;
+}
+.product_card div div button {
+  background-color: blue;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 8px;
+  color: white;
+}
+.sides {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: blue;
+}
+
+.side {
+  border: 2px solid black;
+  width: 20vw;
+  height: 30vh;
+  margin-top: 20px;
+  background-color: darkblue;
+  border-radius: 18px;
+  padding: 15px;
+  color: white;
+}
+
+.footer_submit {
+  padding: 30px;
+}
+.footer_submit button {
+  width: 15vw;
+  height: 6vh;
+  background-color: blue;
+  border-radius: 18px;
+  color: lightgreen;
+  font-weight: bold;
+}
