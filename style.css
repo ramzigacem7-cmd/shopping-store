@@ -12,8 +12,8 @@
   background-color: blue;
   border-radius: 18px;
   box-shadow: 1px 1px 1px 2px black;
-  width: 35vw;
-  height: 50vh;
+  width: 40vw;
+  height: 55vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,19 +89,30 @@ nav {
   flex-direction: column;
   gap: 5px;
   color: white;
+  align-items: center;
 }
 nav div {
   height: 6vh;
   background-color: white;
-  color: blue;
-  font-weight: bold;
 }
 nav div button {
   width: 20vw;
   height: 6vh;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
 }
 nav button:hover {
-  background-color: rgb(195, 194, 194);
+  background-color: aqua;
+}
+#shopping_card_btn {
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  width: 8vw;
+  height: 8vh;
+  border-radius: 18px;
+  box-shadow: 1px 2px 3px 2px white;
 }
 
 main {
@@ -230,7 +241,6 @@ footer {
   width: 50vw;
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
   background-color: blue;
 }
@@ -238,12 +248,11 @@ footer {
 .side {
   border: 2px solid black;
   width: 20vw;
-  height: 30vh;
+  height: 35vh;
   margin-top: 20px;
   background-color: darkblue;
   border-radius: 18px;
   padding: 10px;
-
   color: white;
   overflow: hidden;
 }
@@ -252,11 +261,11 @@ footer {
 }
 
 @keyframes scroll {
-  from {
-    transform: translateY(150%);
+  0% {
+    transform: translateY(100%);
   }
-  to {
-    transform: translateY(-150%);
+  100% {
+    transform: translateY(-100%);
   }
 }
 
@@ -270,4 +279,52 @@ footer {
   border-radius: 18px;
   color: lightgreen;
   font-weight: bold;
+}
+
+.shopping_card {
+  position: absolute;
+  border: 2px solid black;
+  width: 30vw;
+  height: 35vh;
+  z-index: 1000;
+  margin-top: 12%;
+  margin-left: 35%;
+  background-color: black;
+  border-radius: 18px;
+  display: none;
+  flex-direction: column;
+}
+
+.shopping_card .exit_btn {
+  height: 10%;
+  display: flex;
+  justify-content: end;
+  padding: 5px;
+}
+.shopping_card .exit_btn button {
+  border-radius: 5px;
+  background-color: black;
+}
+.shopping_card .shop_items {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.shopping_card .shop_items .card_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 25vw;
+  height: 18vh;
+  box-shadow: 1px 1px 1px 2px blue;
+  border-radius: 18px;
+}
+
+.shopping_card .shop_items .card_item input {
+  width: 6vw;
+  height: 3vh;
 }

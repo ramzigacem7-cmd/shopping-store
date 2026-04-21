@@ -33,11 +33,7 @@
         >
       </div>
 
-      <div>
-        <a href="">
-          <button type="button" id="shopping_card">🛒 shopping Cart</button></a
-        >
-      </div>
+      <button type="button" id="shopping_card_btn">🛒 shopping Cart</button>
     </nav>
 
     <main class="products_main">
@@ -61,7 +57,7 @@
               <ins style="color: lightgreen">Price:20$</ins>
               <label for="countity">Countity:</label>
               <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Buy</button>
+              <button type="button">Add to Card</button>
             </div>
           </div>
         </article>
@@ -79,7 +75,7 @@
               <ins style="color: lightgreen">Price:20$</ins>
               <label for="countity">Countity:</label>
               <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Buy</button>
+              <button type="button">Add to Card</button>
             </div>
           </div>
         </article>
@@ -101,7 +97,7 @@
               <ins style="color: lightgreen">Price:20$</ins>
               <label for="countity">Countity:</label>
               <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Buy</button>
+              <button type="button">Add to Card</button>
             </div>
           </div>
         </article>
@@ -123,33 +119,51 @@
               <ins style="color: lightgreen">Price:20$</ins>
               <label for="countity">Countity:</label>
               <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Buy</button>
+              <button type="button">Add to Card</button>
             </div>
           </div>
         </article>
       </div>
       <div class="sides">
+        <h3>Shopping Guidelines</h3>
         <aside class="side">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur dolores omnis dolorum quibusdam sequi, vel eveniet
-            possimus at architecto similique, tempore illum reprehenderit.
-            Maxime eos quis magnam assumenda temporibus laboriosam?
+            🛍️ Welcome to our store! Enjoy a smooth shopping experience.
+            <br />
+            <br />
+            🚚 Fast delivery available to all regions.
+            <br />
+            <br />
+            💳 Multiple payment methods supported (Cash on Delivery, Card).
+            <br />
+            <br />
+            🔄 Easy returns within 7 days of purchase.
+            <br />
+            <br />
+            📦 Items must be unused and in original packaging for return.
+            <br />
+            <br />
+            📞 Customer support available 24/7 for any help.
           </p>
         </aside>
+        <h3>Cart Summary</h3>
         <aside class="side">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            porro modi repudiandae consectetur vel quos, ipsum doloremque!
-            Doloremque ad est, quas adipisci itaque soluta modi cum non, error,
-            fugit hic?
+            🛒 Cart Summary
+            <br />
+            <br />
+            Items in cart: 0
+            <br />
+            <br />
+            Total price: 0 $
           </p>
         </aside>
       </div>
     </main>
 
     <footer class="footer_submit">
-      <button type="submit">Ckeckout</button>
+      <button type="button" id="checkout">Ckeckout</button>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
