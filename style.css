@@ -121,7 +121,7 @@ main {
 
 .catigory_card {
   width: 65vw;
-  height: 40vh;
+  height: 45vh;
   background-color: blue;
   display: flex;
   flex-direction: column;
@@ -140,7 +140,7 @@ main {
 .catigory_card img {
   border-top-right-radius: 18px;
   border-top-left-radius: 18px;
-  height: 30vh;
+  height: 35vh;
   width: 65vw;
   max-width: 65vw;
 }
