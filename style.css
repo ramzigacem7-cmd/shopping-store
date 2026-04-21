@@ -120,8 +120,8 @@ main {
 }
 
 .catigory_card {
-  width: 50vw;
-  height: 30vh auto;
+  width: 65vw;
+  height: 40vh;
   background-color: blue;
   display: flex;
   flex-direction: column;
@@ -140,9 +140,9 @@ main {
 .catigory_card img {
   border-top-right-radius: 18px;
   border-top-left-radius: 18px;
-  height: 20vh auto;
-  width: 50vw auto;
-  max-width: 50vw;
+  height: 30vh;
+  width: 65vw;
+  max-width: 65vw;
 }
 
 footer {
@@ -194,10 +194,11 @@ footer {
   object-fit: cover;
 }
 .product_card div {
-  width: 28vw auto;
-  max-width: 28vw;
-  max-height: 30vh;
-  height: 30vh auto;
+  width: 28vw;
+  height: 35vh;
+}
+.product_card div p {
+  height: 10vh;
 }
 
 .product_card div div {
@@ -206,6 +207,8 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
+  height: 10vh;
+  width: 28vw;
 }
 .product_card div div input {
   width: 2vw;
@@ -221,6 +224,7 @@ footer {
   border-radius: 8px;
   color: white;
 }
+
 .sides {
   height: 100%;
   width: 50vw;
