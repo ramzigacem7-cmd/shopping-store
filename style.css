@@ -4,14 +4,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(63, 63, 243);
+  margin: 0;
+  padding: 0;
 }
 
 .login_form {
   background-color: blue;
   border-radius: 18px;
   box-shadow: 1px 1px 1px 2px black;
-  width: 40vw;
-  height: 60vh;
+  width: 35vw;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,14 +24,14 @@
   box-shadow: 1px 1px 1px 2px black;
   border: none;
   background-color: rgb(152, 222, 250);
-  width: 30vw;
+  width: 25vw;
   height: 3vh;
   border-radius: 18px;
   padding: 10px;
 }
 
 .login_form button {
-  width: 10vw;
+  width: 12vw;
   height: 5vh;
   background-color: rgb(63, 63, 243);
   color: white;
@@ -37,7 +39,8 @@
   box-shadow: 1px 1px 1px 2px black;
   border: none;
   border-radius: 18px;
-  padding: 10px;
+
+  text-align: center;
 }
 .login_form button a {
   text-decoration: none;
@@ -51,8 +54,8 @@ label {
 .main_body {
   margin: 0;
   display: grid;
-  grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-  grid-template-rows: 20vh auto auto;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 20vh 60vh 20vh;
 }
 
 header {
@@ -60,7 +63,8 @@ header {
   text-align: center;
   color: blue;
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 4;
+  z-index: 100;
 }
 
 .logo_image {
@@ -102,7 +106,7 @@ nav button:hover {
 
 main {
   grid-column-start: 2;
-  grid-column-end: 6;
+  grid-column-end: 4;
   display: flex;
   flex-direction: column;
 }
@@ -112,11 +116,12 @@ main {
   background-color: rgb(0, 191, 255);
   padding-bottom: 25px;
   padding-top: 25px;
+  overflow: scroll;
 }
 
 .catigory_card {
   width: 50vw;
-  height: 40vh auto;
+  height: 30vh auto;
   background-color: blue;
   display: flex;
   flex-direction: column;
@@ -135,6 +140,9 @@ main {
 .catigory_card img {
   border-top-right-radius: 18px;
   border-top-left-radius: 18px;
+  height: 20vh auto;
+  width: 50vw auto;
+  max-width: 50vw;
 }
 
 footer {
@@ -155,7 +163,7 @@ footer {
 .products {
   width: 100vw;
   border-right: 2px solid black;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,8 +179,8 @@ footer {
   width: 45vw;
   height: 30vh;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  gap: 10px;
   background-color: blue;
   transition: 0.5s;
 }
@@ -184,19 +192,18 @@ footer {
   border-bottom-left-radius: 18px;
 }
 .product_card div {
-  height: 100%;
-
-  width: 30vw;
-  display: flex;
-  flex-direction: column;
+  width: 28vw auto;
+  max-width: 28vw;
+  max-height: 30vh;
+  height: 30vh auto;
 }
 
 .product_card div div {
   display: flex;
-
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
 }
 .product_card div div input {
   width: 2vw;
@@ -213,7 +220,7 @@ footer {
   color: white;
 }
 .sides {
-  height: 100vh;
+  height: 100%;
   width: 50vw;
   display: flex;
   flex-direction: column;
@@ -229,8 +236,22 @@ footer {
   margin-top: 20px;
   background-color: darkblue;
   border-radius: 18px;
-  padding: 15px;
+  padding: 10px;
+
   color: white;
+  overflow: hidden;
+}
+.side p {
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(150%);
+  }
+  to {
+    transform: translateY(-150%);
+  }
 }
 
 .footer_submit {
