@@ -190,6 +190,8 @@ footer {
 .product_card img {
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px;
+  width: 15vw;
+  height: 30vh;
   object-fit: cover;
 }
 .product_card div {
