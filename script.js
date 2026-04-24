@@ -1,4 +1,3 @@
-console.log("ramzi");
 let username = "ramzi";
 let password = "1234";
 const user_name = document.getElementById("username");
@@ -26,14 +25,21 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const total_btn = document.getElementById("checkout");
-total_btn.addEventListener("click", () => {
-  alert("Total Price is: '500$'");
-});
+if (total_btn) {
+  total_btn.addEventListener("click", () => {
+    alert("Total Price is: '500$'");
+  });
+}
 
 const shop_btn = document.getElementById("shopping_card_btn");
 const shop_card = document.querySelector(".shopping_card");
 
+const exit_btn = document.getElementById("exit_btn");
+
 shop_btn.addEventListener("click", () => {
-  shop_btn.style.backgroundColor = "red";
-  shop_card.classList.add("active");
+  shop_card.style.display = "inherit";
+});
+
+exit_btn.addEventListener("click", () => {
+  shop_card.style.display = "none";
 });

@@ -7,34 +7,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="main_body">
+    <!--this is the header-->
+
     <header>
       <img
         class="logo_image"
         src="images/OIP.webp"
         alt="logo"
-        width="90"
-        height="90"
+        width="95"
+        height="95"
       />
       <h1>Ramzi Store</h1>
     </header>
 
+    <!--this is the navbar-->
+
     <nav>
       <div>
-        <a href="main.html"><button type="button" id="main">Main</button></a>
-      </div>
-      <div>
+        <a href="main.html">
+          <button type="button" id="main">Main</button>
+        </a>
         <a href="electronics.html">
-          <button type="button" id="clothing">Electronics</button></a
-        >
-      </div>
-      <div>
+          <button type="button" id="clothing">Electronics</button>
+        </a>
         <a href="clothing.html">
-          <button type="button" id="books">Clothing</button></a
-        >
+          <button type="button" id="books">Clothing</button>
+        </a>
       </div>
 
       <button type="button" id="shopping_card_btn">🛒 shopping Cart</button>
     </nav>
+
+    <!--this is the main-->
 
     <main class="products_main">
       <div class="products">
@@ -115,46 +119,77 @@
           </div>
         </article>
       </div>
-      <div class="sides">
-        <h3>Shopping Guidelines</h3>
-        <aside class="side">
-          <p>
-            🛍️ Welcome to our store! Enjoy a smooth shopping experience.
-            <br />
-            <br />
-            🚚 Fast delivery available to all regions.
-            <br />
-            <br />
-            💳 Multiple payment methods supported (Cash on Delivery, Card).
-            <br />
-            <br />
-            🔄 Easy returns within 7 days of purchase.
-            <br />
-            <br />
-            📦 Items must be unused and in original packaging for return.
-            <br />
-            <br />
-            📞 Customer support available 24/7 for any help.
-          </p>
-        </aside>
-        <h3>Cart Summary</h3>
-        <aside class="side">
-          <p>
-            🛒 Cart Summary
-            <br />
-            <br />
-            Items in cart: 0
-            <br />
-            <br />
-            Total price: 0 $
-          </p>
-        </aside>
-      </div>
+      <article class="sides">
+        <div>
+          <h3>Shopping Guidelines</h3>
+          <aside class="side">
+            <p>
+              🛍️ Welcome to our store! Enjoy a smooth shopping experience.
+              <br />
+              <br />
+              🚚 Fast delivery available to all regions.
+              <br />
+              <br />
+              💳 Multiple payment methods supported (Cash on Delivery, Card).
+              <br />
+              <br />
+              🔄 Easy returns within 7 days of purchase.
+              <br />
+              <br />
+              📦 Items must be unused and in original packaging for return.
+              <br />
+              <br />
+              📞 Customer support available 24/7 for any help.
+            </p>
+          </aside>
+          <h3>Cart Summary</h3>
+          <aside class="side">
+            <p>
+              🛒 Cart Summary
+              <br />
+              <br />
+              Items in cart: 0
+              <br />
+              <br />
+              Total price: 0 $
+            </p>
+          </aside>
+        </div>
+      </article>
     </main>
+
+    <!--this is the footer-->
 
     <footer class="footer_submit">
       <button type="submit" id="checkout">Ckeckout</button>
     </footer>
+
+     <!--this is shopping card-->
+
+    <div class="shopping_card">
+      <div class="exit_btn">
+        <button type="button" id="exit_btn">✖️</button>
+      </div>
+
+      <div class="shop_items">
+        <div class="card_item">
+          <input type="number" />
+          <div></div>
+        </div>
+   <br>
+        <div class="card_item">
+          <input type="number" />
+          <div></div>
+        </div>
+<br>
+        <div class="card_item">
+          <input type="number" />
+        <div></div>
+       
+      </div>
+    </div>
+    
+     <!--js linking-->
     <script src="script.js"></script>
   </body>
 </html>

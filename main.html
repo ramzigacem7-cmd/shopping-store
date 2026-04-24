@@ -5,42 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+
   </head>
   <body class="main_body">
+
+  <!--this is the header-->
+
     <header>
       <img
         class="logo_image"
         src="images/OIP.webp"
         alt="logo"
-        width="90"
-        height="90"
+         width="95"
+        height="95"
       />
       <h1>Ramzi Store</h1>
     </header>
+
+<!--this is the navbar-->
 
     <nav>
       <div>
         <a href="electronics.html"
           ><button type="button" id="electronics">Electronics</button></a
         >
-      </div>
-      <div>
         <a href="clothing.html">
           <button type="button" id="clothing">Clothing</button></a
         >
-      </div>
-      <div>
         <a href="books.html">
           <button type="button" id="books">Books</button></a
         >
       </div>
 
-      <button type="button" id="shopping_card_btn">🛒 shopping Cart</button>
+      <button type="submit" id="shopping_card_btn">🛒 shopping Cart</button>
     </nav>
+
+<!--this is the main-->
 
     <main class="catigories_main">
       <a href="electronics.html" style="text-decoration: none">
@@ -88,22 +88,41 @@
       </a>
     </main>
 
+<!--this is the footer-->
+
     <footer>
       <h4>👤 Full Name: Ramzi Gacem</h4>
       <address>✉️ ramzigacem7@gmail.com</address>
       <h4>🆔 Group:10 / Section: 1</h4>
     </footer>
+
+    <!--this is shopping card-->
+
     <div class="shopping_card">
       <div class="exit_btn">
-        <button type="button" style="color: blue">✖️</button>
+        <button type="button" id="exit_btn">✖️</button>
       </div>
+
       <div class="shop_items">
         <div class="card_item">
           <input type="number" />
           <div></div>
         </div>
+   <br>
+        <div class="card_item">
+          <input type="number" />
+          <div></div>
+        </div>
+<br>
+        <div class="card_item">
+          <input type="number" />
+        <div></div>
+       
       </div>
     </div>
-    <script scr="script.js"></script>
+
+     <!--js linking-->
+
+    <script src="script.js"></script>
   </body>
 </html>
