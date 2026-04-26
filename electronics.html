@@ -53,17 +53,25 @@
             width="210"
           />
           <div>
-            <h3>IPhone 17 Pro Max</h3>
+            <h3 class="name">IPhone 17 Pro Max</h3>
             <p>
               A sleek titanium masterpiece featuring a pro-grade quad-camera and
               a stunning edge-to-edge display. Built for elite performance and
               ultimate style.
             </p>
             <div>
-              <ins style="color: lightgreen">Price:20$</ins>
-              <label for="countity">Countity:</label>
-              <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Add to Card</button>
+              <ins style="color: lightgreen"
+                >Price:<span class="price">20</span>$</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Card</button>
             </div>
           </div>
         </article>
@@ -71,7 +79,7 @@
         <article class="product_card">
           <img src="images/Nagu-TV-65-No-Logo.jpg" alt="" width="210" />
           <div>
-            <h3>Nagu 65" Smart TV</h3>
+            <h3 class="name">Nagu 65" Smart TV</h3>
             <p>
               A bezel-less 65-inch screen featuring the VIDAA OS for fast
               streaming. It provides instant access to apps like Netflix and
@@ -79,10 +87,12 @@
             </p>
 
             <div>
-              <ins style="color: lightgreen">Price:20$</ins>
-              <label for="countity">Countity:</label>
-              <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Add to Card</button>
+              <ins style="color: lightgreen"
+                >Price:<span class="price">20</span>$</ins
+              >
+              <label for="count">Countity:</label>
+              <input type="number" value="1" min="1" class="countity" />
+              <button type="button" class="add_to_card_btn">Add to Card</button>
             </div>
           </div>
         </article>
@@ -94,7 +104,7 @@
             width="210"
           />
           <div>
-            <h3>Smart Front-Load Washer</h3>
+            <h3 class="name">Smart Front-Load Washer</h3>
             <p>
               A sleek, high-tech washing machine featuring a digital display and
               vibrant LED lighting. It offers modern styling and efficient
@@ -102,10 +112,18 @@
             </p>
 
             <div>
-              <ins style="color: lightgreen">Price:20$</ins>
-              <label for="countity">Countity:</label>
-              <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Add to Card</button>
+              <ins style="color: lightgreen"
+                >Price:<span class="price">20</span>$</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Card</button>
             </div>
           </div>
         </article>
@@ -118,7 +136,7 @@
           />
 
           <div>
-            <h3>Smart Front-Load Washer</h3>
+            <h3 class="name">Smart Front-Load Washer</h3>
             <p>
               A sleek, high-tech washing machine featuring a digital display and
               vibrant LED lighting. It offers modern styling and efficient
@@ -126,10 +144,18 @@
             </p>
 
             <div>
-              <ins style="color: lightgreen">Price:20$</ins>
-              <label for="countity">Countity:</label>
-              <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Add to Card</button>
+              <ins style="color: lightgreen"
+                >Price:<span class="price">20</span>$</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Card</button>
             </div>
           </div>
         </article>
@@ -177,33 +203,18 @@
       <button type="button" id="checkout">Ckeckout</button>
     </footer>
 
-     <!--this is shopping card-->
+    <!--this is shopping card-->
 
     <div class="shopping_card">
       <div class="exit_btn">
         <button type="button" id="exit_btn">✖️</button>
       </div>
 
-      <div class="shop_items">
-        <div class="card_item">
-          <input type="number" />
-          <div></div>
-        </div>
-   <br>
-        <div class="card_item">
-          <input type="number" />
-          <div></div>
-        </div>
-<br>
-        <div class="card_item">
-          <input type="number" />
-        <div></div>
-       
-      </div>
+      <div class="shop_items"></div>
     </div>
-    
-     <!--js linking-->
-     
+
+    <!--js linking-->
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -46,7 +46,7 @@
         <article class="product_card">
           <img src="images/38-laws-of-power.webp" alt="" width="210" />
           <div>
-            <h3>The 48 Laws of Power</h3>
+            <h3 class="name">The 48 Laws of Power</h3>
             <p>
               A classic guide by Robert Greene on the art of influence and
               strategy. It distills historical wisdom into 48 essential laws for
@@ -54,44 +54,68 @@
             </p>
 
             <div>
-              <ins style="color: lightgreen">Price:20$</ins>
-              <label for="countity">Countity:</label>
-              <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Add to Card</button>
+              <ins style="color: lightgreen"
+                >Price:<span class="price">20</span>$</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Card</button>
             </div>
           </div>
         </article>
         <article class="product_card">
           <img src="images/OIP (2).webp" alt="" width="210" />
           <div>
-            <h3>Harry Potter and the Prisoner of Azkaban</h3>
+            <h3 class="name">Harry Potter and the Prisoner of Azkaban</h3>
             <p>
               The third book in the beloved fantasy series by J.K. Rowling.
               Harry returns to Hogwarts for his third year, facing Dementors and
               discovering shocking secrets about his family's past.
             </p>
             <div>
-              <ins style="color: lightgreen">Price:20$</ins>
-              <label for="countity">Countity:</label>
-              <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Add to Card</button>
+              <ins style="color: lightgreen"
+                >Price:<span class="price">20</span>$</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Card</button>
             </div>
           </div>
         </article>
         <article class="product_card">
           <img src="images/OIP (3).webp" alt="" width="210" />
           <div>
-            <h3>Calisthenics 101</h3>
+            <h3 class="name">Calisthenics 101</h3>
             <p>
               A complete beginner's guide to bodyweight exercise. Learn
               fundamental movements and build total-body strength using minimal
               equipment.
             </p>
             <div>
-              <ins style="color: lightgreen">Price:20$</ins>
-              <label for="countity">Countity:</label>
-              <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Add to Card</button>
+              <ins style="color: lightgreen"
+                >Price:<span class="price">20</span>$</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Card</button>
             </div>
           </div>
         </article>
@@ -103,7 +127,7 @@
             width="210"
           />
           <div>
-            <h3>Smart Front-Load Washer</h3>
+            <h3 class="name">Smart Front-Load Washer</h3>
             <p>
               A sleek, high-tech washing machine featuring a digital display and
               vibrant LED lighting. It offers modern styling and efficient
@@ -111,10 +135,18 @@
             </p>
 
             <div>
-              <ins style="color: lightgreen">Price:20$</ins>
-              <label for="countity">Countity:</label>
-              <input type="number" value="1" min="1" id="countity" />
-              <button type="button">Add to Card</button>
+              <ins style="color: lightgreen"
+                >Price:<span class="price">20</span>$</ins
+              >
+              <label for="count">Countity:</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                id="count"
+                class="countity"
+              />
+              <button type="button" class="add_to_card_btn">Add to Card</button>
             </div>
           </div>
         </article>
@@ -164,32 +196,17 @@
       <button type="submit" id="checkout">Ckeckout</button>
     </footer>
 
-     <!--this is shopping card-->
+    <!--this is shopping card-->
 
     <div class="shopping_card">
       <div class="exit_btn">
         <button type="button" id="exit_btn">✖️</button>
       </div>
 
-      <div class="shop_items">
-        <div class="card_item">
-          <input type="number" />
-          <div></div>
-        </div>
-   <br>
-        <div class="card_item">
-          <input type="number" />
-          <div></div>
-        </div>
-<br>
-        <div class="card_item">
-          <input type="number" />
-        <div></div>
-       
-      </div>
+      <div class="shop_items"></div>
     </div>
-    
-     <!--js linking-->
+
+    <!--js linking-->
     <script src="script.js"></script>
   </body>
 </html>
