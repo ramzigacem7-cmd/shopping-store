@@ -58,7 +58,7 @@
 
             <div>
               <ins style="color: lightgreen"
-                >Price:<span class="price">20</span>$</ins
+                >Price:<span class="price">50</span>$</ins
               >
               <label for="count">Countity:</label>
               <input
@@ -88,7 +88,7 @@
 
             <div>
               <ins style="color: lightgreen"
-                >Price:<span class="price">20</span>$</ins
+                >Price:<span class="price">60</span>$</ins
               >
               <label for="count">Countity:</label>
               <input
@@ -118,7 +118,7 @@
 
             <div>
               <ins style="color: lightgreen"
-                >Price:<span class="price">20</span>$</ins
+                >Price:<span class="price">100</span>$</ins
               >
               <label for="count">Countity:</label>
               <input
@@ -148,7 +148,7 @@
 
             <div>
               <ins style="color: lightgreen"
-                >Price:<span class="price">20</span>$</ins
+                >Price:<span class="price">200</span>$</ins
               >
               <label for="count">Countity:</label>
               <input
@@ -166,7 +166,7 @@
       <article class="sides">
         <div>
           <h3>Shopping Guidelines</h3>
-          <aside class="side">
+          <aside class="side1">
             <p>
               🛍️ Welcome to our store! Enjoy a smooth shopping experience.
               <br />
@@ -187,16 +187,14 @@
             </p>
           </aside>
           <h3>Cart Summary</h3>
-          <aside class="side">
-            <p></p>
+          <aside class="side2">
             <p>
-              🛒 Cart Summary
+              Items in cart:
+              <span class="total_nbr_items" style="color: aquamarine">0</span>
               <br />
               <br />
-              Items in cart: 0
-              <br />
-              <br />
-              Total price: 0 $
+              Total price:
+              <span class="total_price" style="color: aquamarine">0</span> $
             </p>
           </aside>
         </div>
@@ -206,7 +204,7 @@
     <!--this is the footer-->
 
     <footer class="footer_submit">
-      <button type="submit" id="checkout">Ckeckout</button>
+      <button type="submit" class="checkout">Ckeckout</button>
     </footer>
 
     <!--this is shopping card-->
@@ -215,10 +213,12 @@
       <div class="exit_btn">
         <button type="button" id="exit_btn">✖️</button>
       </div>
-
+      <h2>
+        List of Items:
+        <hr />
+      </h2>
       <div class="shop_items"></div>
     </div>
-
     <!--js linking-->
     <script src="script.js"></script>
   </body>

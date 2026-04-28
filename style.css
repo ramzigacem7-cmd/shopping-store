@@ -272,7 +272,7 @@ footer {
   color: blue;
 }
 
-.side {
+.side1 {
   width: 19.8vw;
   height: 28vh;
   background-color: darkblue;
@@ -281,7 +281,16 @@ footer {
   overflow: hidden;
 }
 
-.side p {
+.side2 {
+  text-align: center;
+  font-weight: bold;
+  background-color: darkblue;
+  padding: 20px;
+  color: white;
+  border-radius: 12px;
+}
+
+.side1 p {
   padding: 12px;
   animation: scroll 10s linear infinite;
 }
@@ -322,59 +331,71 @@ footer {
   background-color: black;
   border-radius: 12px;
   display: none;
-  padding-bottom: 20px;
-  z-index: 10000;
+  flex-direction: column;
+  z-index: 100;
 }
 
 .exit_btn {
-  height: 8vh;
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  height: 5vh;
+  text-align: end;
+  padding: 10px 10px;
 }
 
 .exit_btn button {
-  height: 5vh;
-  width: 3vw;
-  margin-right: 10px;
+  background-color: blue;
+  padding: 5px;
   border-radius: 8px;
-  background-color: black;
-  box-shadow: 1px 1px 1px 2px white;
+}
+.shopping_card h2 {
+  height: 8vh;
+  margin: 0%;
+  text-align: center;
+  color: blue;
 }
 
 .shop_items {
-  height: 100%;
-  margin: 0 auto;
+  height: 40vh;
+  text-align: center;
   overflow: scroll;
   scrollbar-width: none;
-  margin-top: 15px;
+  padding: 15px;
 }
-
 .card_item {
+  height: 18vh;
+  width: 45vw;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  height: 25vh;
-  border: 2px solid blue;
+  margin-top: 20px;
   border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.card_item > :nth-child(1) {
-  flex: 1;
-  flex-wrap: wrap;
-}
-.card_item > :nth-child(2) {
-  flex: 2;
+  border: 2px solid blue;
 }
 
 .card_item div {
+  height: 100%;
+  width: 100%;
+}
+.card_item > :nth-child(1) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card_item > :nth-child(1) div {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 25vw;
-  height: 100%;
+  justify-content: space-evenly;
+}
+
+.card_item > :nth-child(2) {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: blue;
+  border-radius: 12px;
+  width: 3vw;
+  height: 5vh;
+  font-size: 1.5em;
 }
