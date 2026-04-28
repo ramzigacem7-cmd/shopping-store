@@ -32,8 +32,8 @@
 }
 
 #loginbtn {
-  width: 12vw;
-  height: 6vh;
+  width: 10vw;
+  height: 7vh;
   background: local;
   color: black;
   font-weight: bold;
@@ -41,13 +41,16 @@
   border: none;
   border-radius: 12px;
   text-align: center;
-  padding: 12px;
 }
 
 @media (max-width: 768px) {
+  .form_body {
+    background-image: url(images/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.avif);
+    background-repeat: round;
+  }
   .login_form {
     width: 100vw;
-    background: linear-gradient(45deg, white, grey, white);
+    background: none;
   }
   .login_form input {
     width: 60vw;
