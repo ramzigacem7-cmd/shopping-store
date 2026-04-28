@@ -1,20 +1,21 @@
 .form_body {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: aqua;
+  display: flex;
+  justify-content: end;
+  background: linear-gradient(90deg, white, black, white);
   margin: 0;
   padding: 0;
   font-weight: bold;
 }
 
 .login_form {
-  background-color: blue;
+  background-image: url(images/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 12px;
   box-shadow: 1px 1px 1px 2px black;
-  width: 30vw;
-  height: 50vh;
+  width: 50vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +34,7 @@
 #loginbtn {
   width: 12vw;
   height: 6vh;
-  background-color: aqua;
+  background: local;
   color: black;
   font-weight: bold;
   box-shadow: 1px 1px 1px 2px black;
@@ -41,6 +42,19 @@
   border-radius: 12px;
   text-align: center;
   padding: 12px;
+}
+
+@media (max-width: 768px) {
+  .login_form {
+    width: 100vw;
+    background: linear-gradient(45deg, white, grey, white);
+  }
+  .login_form input {
+    width: 60vw;
+  }
+  #loginbtn {
+    width: 35vw;
+  }
 }
 
 /*=========================================================*/
