@@ -1,7 +1,7 @@
 .form_body {
   display: flex;
   justify-content: end;
-  background: linear-gradient(90deg, white, black, white);
+  background: linear-gradient(90deg, black, white);
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -12,8 +12,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
-  box-shadow: 1px 1px 1px 2px black;
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -43,6 +41,34 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .login_form {
+    width: 100vw;
+    background: linear-gradient(45deg, black, black, white, black, black);
+  }
+  .login_form input {
+    width: 60vw;
+  }
+  #loginbtn {
+    width: 35vw;
+  }
+
+  .main_body {
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 12% auto 12%;
+  }
+  .logo_image {
+    width: 17vw;
+    height: 10vh;
+    top: 14px;
+    left: 14px;
+  }
+  header h1 {
+    font-size: 2em;
+    padding: 5px;
+  }
+}
+
 /*=========================================================*/
 
 .main_body {
@@ -53,13 +79,14 @@
 }
 
 header {
-  background: url(images/uhovrm1m.png);
+  background: url(images/83z5zlqe.png);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: blue;
+  color: lime;
   grid-column-start: 1;
   grid-column-end: 3;
+  padding: 10px;
 }
 
 .logo_image {
@@ -68,7 +95,7 @@ header {
   top: 20px;
   left: 20px;
   border-radius: 50%;
-  box-shadow: 1px 1px 1px 2px blue;
+  box-shadow: 1px 1px 1px 2px lime;
   width: 8vw;
   height: 15vh;
 }
@@ -76,10 +103,8 @@ header {
 header h1 {
   font-style: italic;
   font-size: 3em;
-  border: 2px solid black;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 1px 1px 1px 2px black;
 }
 
 /*=========================================================*/
@@ -87,11 +112,12 @@ header h1 {
 nav {
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: black;
+  background-color: limegreen;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  padding: 10px;
 }
 
 nav div {
@@ -105,20 +131,29 @@ nav div button {
   height: 8vh;
   width: 100%;
   font-weight: bold;
-  background-color: blue;
+  background-color: black;
+  color: lime;
+  border: none;
+  border-radius: 12px;
 }
 
 nav button:hover {
-  background-color: aqua;
+  background-color: darkgreen;
 }
 
 #shopping_card_btn {
   background-color: black;
-  color: white;
+  color: lime;
   width: 10vw;
   height: 10vh;
+  font-weight: bold;
   border-radius: 12px;
-  box-shadow: 1px 2px 3px 2px white;
+  box-shadow: 1px 2px 3px 2px lime;
+  transition: 0.5s linear;
+}
+
+#shopping_card_btn:hover {
+  transform: scale(1.08);
 }
 
 /*=========================================================*/
@@ -133,46 +168,47 @@ main {
 .catigories_main {
   gap: 30px;
   align-items: center;
-  background-color: rgb(0, 191, 255);
+  background-color: lime;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .catigory_card {
-  max-width: 100vw;
-  width: 65vw auto;
-  height: 45vh;
-  background-color: blue;
+  max-width: 70vw;
+  width: 50vw auto;
+  height: 45vh auto;
+  max-height: 60vh;
+  background: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: lime;
   border-radius: 12px;
-  box-shadow: 1px 1px 1px 2px black;
+  box-shadow: 0px 0px 5px black;
   text-align: center;
-  transition: 0.5s;
+  transition: 0.5s linear;
   padding-bottom: 5px;
 }
 
 .catigory_card:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 .catigory_card img {
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
   height: 35vh;
-  width: 65vw auto;
-  max-width: 80vw;
+  width: 70vw;
+  max-width: 70vw;
 }
 
 footer {
   grid-column-start: 1;
   grid-column-end: 6;
   text-align: center;
-  color: black;
-  background-color: blue;
+  color: lime;
+  background-color: black;
 }
 
 /*=========================================================*/
@@ -190,49 +226,51 @@ footer {
   align-items: center;
   gap: 30px;
   padding: 25px;
-  background-color: darkblue;
+  background-color: black;
 }
 
 .product_card {
-  box-shadow: 1px 1px 1px 2px black;
+  box-shadow: 0px 0px 5px black;
   border-radius: 12px;
-  width: 50vw auto;
-  max-width: 60vw;
+  width: 45vw auto;
+  max-width: 55vw;
   height: 40vh auto;
-  max-height: 40vh;
+  max-height: 60vh;
+  min-height: 40vh;
   display: flex;
   justify-content: inherit;
-  background-color: blue;
-  transition: 0.5s;
+  background-color: lime;
+  transition: 0.5s linear;
 }
 
 .product_card:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 .product_card img {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  height: 100%;
+  height: 100% auto;
   width: 40%;
+  max-width: 40%;
+  min-width: 20%;
 }
 
 .product_card div {
   max-width: 60%;
   max-height: 100%;
-  width: 60% auto;
+  width: 60%;
   height: 100% auto;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .product_card div h3 {
-  padding-left: 20px auto;
   text-align: center;
 }
 
 .product_card div p {
-  padding-left: 20px;
   height: 40%;
 }
 
@@ -241,34 +279,35 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  height: 18vh auto;
+  min-height: 10vh;
+  width: 90%;
   max-width: 100%;
-  width: 100% auto;
   font-weight: bold;
 }
 
 .product_card div div input {
-  width: 3vw;
+  width: 2vw;
   text-align: center;
   border-radius: 8px;
   border: none;
-  max-height: 4vh;
-  height: 4vh auto;
+  height: 4vh;
 }
 
 .product_card div div button {
-  background-color: blue;
+  background-color: black;
   width: 12vw;
-  max-height: 8vh;
-  height: 8vh auto;
+  max-height: 15vh;
+  height: 10vh;
   border-radius: 12px;
-  color: white;
+  color: lime;
   font-weight: bold;
 }
 
 .sides {
   height: 100%;
   width: 25%;
-  background-color: aqua;
+  background-color: black;
   position: relative;
 }
 
@@ -279,24 +318,24 @@ footer {
 
 .sides div h3 {
   text-align: center;
-  color: blue;
+  color: lime;
 }
 
 .side1 {
   width: 19.8vw;
   height: 28vh;
-  background-color: darkblue;
+  background-color: lime;
   border-radius: 12px;
-  color: white;
+  color: black;
   overflow: hidden;
 }
 
 .side2 {
   text-align: center;
   font-weight: bold;
-  background-color: darkblue;
+  background-color: lime;
   padding: 20px;
-  color: white;
+  color: black;
   border-radius: 12px;
 }
 
@@ -323,9 +362,9 @@ footer {
 .footer_submit button {
   width: 20vw;
   height: 8vh;
-  background-color: blue;
+  background-color: lime;
   border-radius: 12px;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
@@ -333,7 +372,7 @@ footer {
 
 .shopping_card {
   position: absolute;
-  box-shadow: 1px 1px 1px 2px blue;
+  border: 4px double lime;
   width: 50%;
   height: 60vh;
   margin-top: 10%;
@@ -352,7 +391,7 @@ footer {
 }
 
 .exit_btn button {
-  background-color: blue;
+  background-color: lime;
   padding: 5px;
   border-radius: 8px;
 }
@@ -360,7 +399,7 @@ footer {
   height: 8vh;
   margin: 0%;
   text-align: center;
-  color: blue;
+  color: lime;
 }
 
 .shop_items {
@@ -371,13 +410,14 @@ footer {
   padding: 15px;
 }
 .card_item {
+  background-color: lime;
   height: 18vh;
   width: 45vw;
   margin: 0 auto;
   display: flex;
   margin-top: 20px;
   border-radius: 12px;
-  border: 2px solid blue;
+  padding: 10px;
 }
 
 .card_item div {
@@ -388,8 +428,10 @@ footer {
   flex: 1;
   display: flex;
   flex-direction: column;
+  font-weight: bold;
 }
 .card_item > :nth-child(1) div {
+  height: 12vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -398,80 +440,19 @@ footer {
 .card_item > :nth-child(2) {
   flex: 2;
   display: flex;
+
   align-items: center;
   justify-content: center;
 }
 
 .btn {
-  background-color: blue;
-  border-radius: 12px;
-  width: 3vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lime;
+  border-radius: 8px;
+  width: 2.5vw;
   height: 5vh;
   font-size: 1.5em;
-}
-
-@media (max-width: 768px) {
-  .form_body {
-    background-image: url(images/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.avif);
-    background-repeat: round;
-  }
-  .login_form {
-    width: 100vw;
-    background: none;
-  }
-  .login_form input {
-    width: 60vw;
-  }
-  #loginbtn {
-    width: 35vw;
-  }
-  .main_body {
-    grid-template-columns: 15% 85%;
-    grid-template-rows: 10% auto 12%;
-  }
-  .logo_image {
-    width: 17vw;
-    height: 10vh;
-    top: 14px;
-    left: 14px;
-  }
-  header h1 {
-    font-size: 2em;
-    padding: 5px;
-  }
-  nav {
-    position: absolute;
-    display: none;
-  }
-  main {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .catigory_card {
-    width: 80vw;
-  }
-  .catigory_card img {
-    width: 80vw;
-  }
-  .product_card {
-    height: 20vh;
-    width: 60vw;
-  }
-
-  .product_card div h3 {
-    font-size: 1.02em;
-    padding-left: 5px;
-  }
-  .product_card div p {
-    font-size: 8px;
-  }
-  .product_card div div {
-    font-size: 8px;
-  }
-  .product_card div div button {
-    font-size: 10px;
-  }
-  .product_card div div input {
-    font-size: 10px;
-  }
 }

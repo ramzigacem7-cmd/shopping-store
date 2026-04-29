@@ -54,14 +54,14 @@ function create_shop_cart() {
          <div>
          <div>
            <button type="button" class="add_btn btn">+</button>
-            <h3 style="color: white;"> ${x.countity}</h3>
+            <h3 > ${x.countity}</h3>
              <button type="button" class="remove_btn btn">-</button>
              </div>
-          <h4  style="color: lightgreen">total price:<ins>${x.price}</ins>$</h4>
+          <h4">total price:<ins>${x.price}</ins>$</h4>
          </div>
 
          <div>
-          <h2 style="color: white;"> ${x.name}</h2>
+          <h2 style="color: black;"> ${x.name}</h2>
          </div>
          
            
@@ -125,7 +125,7 @@ create_shop_cart();
 function check_if_card_empty() {
   let card = JSON.parse(localStorage.getItem("card")) || [];
   if (card.length === 0) {
-    shop_item.innerHTML = `<h1 style="color:white">shopping card is empty</h1>`;
+    shop_item.innerHTML = `<h1 style="color:lime">shopping card is empty</h1>`;
   }
 }
 
