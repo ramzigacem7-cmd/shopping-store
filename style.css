@@ -1,25 +1,33 @@
+/*============ style of the login page ============*/
 .form_body {
   display: flex;
-  justify-content: end;
-  background: linear-gradient(90deg, black, white);
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   font-weight: bold;
 }
-
+/* style of the login form */
 .login_form {
-  background-image: url(images/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.avif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 50vw;
+  background: linear-gradient(90deg, rgb(251, 244, 234), green);
+  width: 50%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.side_image {
+  width: 75%;
+  height: 100vh;
 
+  background-image: url(images/photo_2026-05-02_20-57-59.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* style of inputs form */
 .login_form input {
   box-shadow: 1px 1px 1px 2px black;
   border: none;
@@ -28,7 +36,7 @@
   border-radius: 12px;
   padding: 12px;
 }
-
+/* style of the button of the form */
 #loginbtn {
   width: 10vw;
   height: 7vh;
@@ -41,11 +49,12 @@
   text-align: center;
 }
 
-/*=========================================================*/
+/*============ style of the  main,electronics,clothing and books pages ============*/
 
 .main_body {
   margin: 0;
   display: grid;
+  font-family: "Poppins", Arial, sans-serif;
   grid-template-columns: 15% 85%;
   grid-template-rows: 12% auto 12%;
 }
@@ -55,7 +64,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: lime;
+  color: rgb(255, 255, 255);
   grid-column-start: 1;
   grid-column-end: 3;
   padding: 10px;
@@ -79,12 +88,10 @@ header h1 {
   padding: 20px;
 }
 
-/*=========================================================*/
-
 nav {
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: limegreen;
+  background-color: rgb(237, 255, 237);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,24 +110,25 @@ nav div button {
   height: 8vh;
   width: 100%;
   font-weight: bold;
-  background-color: black;
-  color: lime;
+  background-color: rgb(28, 28, 32);
+  color: rgb(255, 255, 255);
+  box-shadow: 1px 2px 3px 2px rgb(32, 31, 31);
   border: none;
   border-radius: 12px;
 }
 
 nav button:hover {
-  background-color: darkgreen;
+  background-color: grey;
 }
 
 #shopping_card_btn {
-  background-color: black;
-  color: lime;
+  background-color: rgb(236, 9, 9);
+  color: rgb(243, 249, 243);
   width: 10vw;
   height: 10vh;
   font-weight: bold;
   border-radius: 12px;
-  box-shadow: 1px 2px 3px 2px lime;
+  box-shadow: 1px 2px 3px 2px rgb(185, 11, 31);
   transition: 0.5s linear;
 }
 
@@ -128,7 +136,7 @@ nav button:hover {
   transform: scale(1.08);
 }
 
-/*=========================================================*/
+/*============ style of the main part in the main page ============*/
 
 main {
   grid-column-start: 2;
@@ -140,7 +148,7 @@ main {
 .catigories_main {
   gap: 30px;
   align-items: center;
-  background-color: lime;
+  background-color: rgb(37, 40, 37);
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -150,12 +158,12 @@ main {
   width: 50vw auto;
   height: 45vh auto;
   max-height: 60vh;
-  background: black;
+  background: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: lime;
+  color: rgb(0, 0, 0);
   border-radius: 12px;
   box-shadow: 0px 0px 5px black;
   text-align: center;
@@ -175,17 +183,19 @@ main {
   max-width: 70vw;
 }
 
+/*============ style of the footer part in the main page ============*/
+
 footer {
   grid-column-start: 1;
   grid-column-end: 6;
   text-align: center;
-  color: lime;
-  background-color: black;
+  color: rgb(251, 251, 251);
+  background-color: rgb(37, 40, 37);
   display: flex;
   justify-content: space-evenly;
 }
 
-/*=========================================================*/
+/*============ style of the main part in the catigories pages ============*/
 
 .products_main {
   display: flex;
@@ -200,7 +210,7 @@ footer {
   align-items: center;
   gap: 30px;
   padding: 25px;
-  background-color: black;
+  background-color: rgb(37, 40, 37);
 }
 
 .product_card {
@@ -213,7 +223,7 @@ footer {
   min-height: 30vh;
   display: flex;
   justify-content: inherit;
-  background-color: lime;
+  background-color: white;
   transition: 0.5s linear;
 }
 
@@ -275,14 +285,16 @@ footer {
   max-height: 15vh;
   height: 8vh;
   border-radius: 12px;
-  color: lime;
+  color: rgb(225, 234, 225);
   font-weight: bold;
+  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
+  transition: all 0.3s ease;
 }
 
 .sides {
   height: 100%;
   width: 25%;
-  background-color: black;
+  background-color: rgb(37, 40, 37);
   position: relative;
 }
 
@@ -293,13 +305,13 @@ footer {
 
 .sides div h3 {
   text-align: center;
-  color: lime;
+  color: rgb(235, 242, 235);
 }
 
 .side1 {
   width: 19.8vw;
   height: 28vh;
-  background-color: lime;
+  background-color: rgb(230, 234, 230);
   border-radius: 12px;
   color: black;
   overflow: hidden;
@@ -308,9 +320,9 @@ footer {
 .side2 {
   text-align: center;
   font-weight: bold;
-  background-color: lime;
+  background-color: rgb(239, 244, 239);
   padding: 20px;
-  color: black;
+  color: rgb(0, 0, 0);
   border-radius: 12px;
 }
 
@@ -328,6 +340,8 @@ footer {
   }
 }
 
+/*============ style of the footer part in the catigories pages ============*/
+
 .footer_submit {
   display: flex;
   align-items: center;
@@ -337,17 +351,19 @@ footer {
 .footer_submit button {
   width: 20vw;
   height: 8vh;
-  background-color: lime;
+  background-color: rgba(228, 236, 228, 0.034);
   border-radius: 12px;
   color: black;
   font-weight: bold;
+  box-shadow: 0 0 15px rgba(50, 78, 78, 0.8);
+  transition: all 0.3s ease;
 }
 
-/*=======================================================*/
+/*============ style of the shopping cart ============*/
 
 .shopping_card {
   position: absolute;
-  border: 4px double lime;
+  border: 4px double rgb(5, 6, 5);
   width: 50%;
   height: 60vh;
   margin-top: 10%;
@@ -366,7 +382,7 @@ footer {
 }
 
 .exit_btn button {
-  background-color: lime;
+  background-color: rgb(225, 235, 225);
   padding: 5px;
   border-radius: 8px;
 }
@@ -374,7 +390,7 @@ footer {
   height: 8vh;
   margin: 0%;
   text-align: center;
-  color: lime;
+  color: rgb(239, 246, 239);
 }
 
 .shop_items {
@@ -385,7 +401,7 @@ footer {
   padding: 15px;
 }
 .card_item {
-  background-color: lime;
+  background-color: rgb(253, 255, 253);
   height: 18vh;
   width: 45vw;
   margin: 0 auto;
@@ -425,37 +441,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: lime;
+  color: rgb(239, 244, 239);
   border-radius: 8px;
   width: 2.5vw;
   height: 5vh;
   font-size: 1.5em;
-}
-
-@media (max-width: 768px) {
-  .login_form {
-    width: 100vw;
-    background: linear-gradient(45deg, black, black, white, black, black);
-  }
-  .login_form input {
-    width: 60vw;
-  }
-  #loginbtn {
-    width: 35vw;
-  }
-
-  .main_body {
-    grid-template-columns: 15% 85%;
-    grid-template-rows: 12% auto 12%;
-  }
-  .logo_image {
-    width: 17vw;
-    height: 10vh;
-    top: 14px;
-    left: 14px;
-  }
-  header h1 {
-    font-size: 2em;
-    padding: 5px;
-  }
 }

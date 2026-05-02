@@ -3,23 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Categories</title>
+    <!--Link CSS-->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="main_body">
-    <!--this is the header-->
 
+  <body class="main_body">
+    <!--Header Part-->
     <header>
       <img
         class="logo_image"
         src="images/shopping-logo-design-template-6bc88430ababccbb7cdca0addfc44748_screen.jpg"
         alt="logo"
       />
-      <h1>Green Store</h1>
+      <h1>Mega Shop DZ</h1>
     </header>
-    <!--this is the navbar-->
 
+    <!--Navbar Part-->
     <nav>
+      <!--Links To The Others Pages-->
       <div>
         <a href="electronics.html"
           ><button type="button" id="electronics">Electronics</button></a
@@ -31,19 +33,21 @@
           <button type="button" id="books">Books</button></a
         >
       </div>
-
       <button type="submit" id="shopping_card_btn">🛒 shopping Cart</button>
     </nav>
 
-    <!--this is the main-->
-
+    <!--Main Part-->
     <main class="catigories_main">
+      <!--Link To Electronics Products-->
       <a href="electronics.html" style="text-decoration: none">
+        <!--Electronics Catigory-->
         <article class="catigory_card">
+          <!--Catigory Image-->
           <img
             src="images/flat-lay-white-black-electronics-accessories-office-supplies_14117-720003.jpg"
             alt=""
           />
+          <!--Catigory description-->
           <p>
             Upgrade your world with our cutting-edge Electronics collection.
             From high-performance laptops and the latest smartphones to
@@ -52,12 +56,16 @@
           </p>
         </article>
       </a>
+      <!--Link To Clothing Products-->
       <a href="clothing.html" style="text-decoration: none">
+        <!--Clothing Catigory -->
         <article class="catigory_card">
+          <!--Catigory Image-->
           <img
             src="images/52323567b0af8ea0e9e1d8d120d54fa2_square.jpg"
             alt=""
           />
+          <!--Catigory description-->
           <p>
             Redefine your wardrobe with our curated Clothing collection, where
             timeless essentials meet the latest trends. From sophisticated
@@ -67,12 +75,16 @@
           </p>
         </article>
       </a>
+      <!--Link To Books Products-->
       <a href="books.html" style="text-decoration: none">
+        <!--Books Catigory-->
         <article class="catigory_card">
+          <!--Catigory Image-->
           <img
             src="images/Tsutaya-Bookstore-Pavilion-Bukit-Jalil-12-1024x684.jpg"
             alt=""
           />
+          <!--Catigory description-->
           <p>
             Dive into our curated Books collection, where every page offers a
             new adventure. Whether you’re looking for gripping fiction,
@@ -83,8 +95,8 @@
       </a>
     </main>
 
-    <!--this is the footer-->
-
+    <!--Footer Part-->
+    <!--Information About Group Members-->
     <footer>
       <div>
         <h4>👤 Full Name: Gacem Ramzi</h4>
@@ -108,9 +120,9 @@
       </div>
     </footer>
 
-    <!--this is shopping card-->
-
+    <!--Shopping Cart-->
     <div class="shopping_card">
+      <!--Exit Button-->
       <div class="exit_btn">
         <button type="button" id="exit_btn">✖️</button>
       </div>
@@ -118,11 +130,11 @@
         List of Items:
         <hr />
       </h2>
+      <!--Space For The Products That We Will Add-->
       <div class="shop_items"></div>
     </div>
 
-    <!--js linking-->
-
+    <!--Link JS-->
     <script src="script.js"></script>
   </body>
 </html>
